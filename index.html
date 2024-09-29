@@ -278,15 +278,15 @@ if (scene == "M"){
 			
 			if (canvasX > 300 && canvasX < 716 && canvasY > 107 && canvasY < 162){
 				if (money-atm[0]<0){errormsgshow=1; errormsg="NOT ENOUGH MONEY!";}
-				else{money-=atm[0]; atm[1]=0; movM[0]=0; movD[0]=20; sArray.push(sendName); printout+=sendName + ": 1 Month.  \n";}
+				else{money-=atm[0]; atm[1]=0; movM[0]=0; movD[0]=20; sArray.push(sendName); printout+=sendName + ": 1 Month.  \n\n";}
 			}
 			if (canvasX > 300 && canvasX < 716 && canvasY > 173 && canvasY < 225){
 				if (money-(atm[0]*1.5)<0){errormsgshow=1; errormsg="NOT ENOUGH MONEY!";}
-				else{money-=(atm[0]*1.5); movM[0]=0; movD[0]=20; atm[1]=1; sArray.push(sendName); printout+=sendName + ": 2 Months.  \n";}
+				else{money-=(atm[0]*1.5); movM[0]=0; movD[0]=20; atm[1]=1; sArray.push(sendName); printout+=sendName + ": 2 Months.  \n\n";}
 			}
 			if (canvasX > 300 && canvasX < 716 && canvasY > 239 && canvasY < 290){
 				if (money-(atm[0]*2)<0){errormsgshow=1; errormsg="NOT ENOUGH MONEY!";}
-				else{money-=(atm[0]*2); movM[0]=0; movD[0]=20; atm[1]=2; sArray.push(sendName); printout+=sendName + ": 3 Months.  \n";}
+				else{money-=(atm[0]*2); movM[0]=0; movD[0]=20; atm[1]=2; sArray.push(sendName); printout+=sendName + ": 3 Months.  \n\n";}
 			}
 		}
 	}
